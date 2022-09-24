@@ -1,0 +1,12 @@
+<div class="cameras">
+    <ul>
+        <app-card>
+            <app-camera-item *ngFor="let camera of cameras" 
+            [name]="camera.name"
+            [model]="camera.model"
+            [resolution]="camera.resolution"
+            [ip]="camera.ip"
+            ></app-camera-item>
+        </app-card>
+    </ul>
+</div>

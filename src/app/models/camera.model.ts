@@ -2,6 +2,6 @@ export class Camera {
     id?: string;
     name?: string;
     model?: string;
-    resolution?: boolean;
+    resolution?: string;
     ip?: any;
 }
