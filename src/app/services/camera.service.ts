@@ -18,4 +18,8 @@ export class CameraService {
   delete(id: any): Observable<any> {
     return this.http.delete(`${baseUrl}/camera/${id}`);
   }
+
+  create(camera: Camera): Observable<any> {
+    return this.http.post(`${baseUrl}/camera`, camera);
+  }
 }

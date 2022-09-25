@@ -1,0 +1,41 @@
+<div class="form">
+    <div *ngIf="!created">
+        <h2>
+            Add a new camera
+        </h2>
+      
+        <div class="input-wrapper">
+            <input type="text" id="name" class="form-control" placeholder="Name" [(ngModel)]="camera.name" >
+            <label for="name" class="control-label">Name</label>
+        </div>
+    
+        <div class="input-wrapper">
+            <input type="text" id="model" class="form-control" placeholder="Model" [(ngModel)]="camera.model" >
+            <label for="model" class="control-label">Model</label>
+        </div>
+
+        <div class="input-wrapper">
+            <input type="text" id="resolution" class="form-control" placeholder="Resolution" [(ngModel)]="camera.resolution" >
+            <label for="resolution" class="control-label">Resolution</label>
+        </div>
+      
+        <div class="input-wrapper">
+            <input type="text" id="ip" class="form-control" placeholder="IP" [(ngModel)]="camera.ip" >
+            <label for="ip" class="control-label">IP</label>
+        </div>
+
+        <div class="action">
+            <button (click)="saveCamera()" class="save">Save</button>
+        </div>
+        
+    </div>
+
+    <div *ngIf="created" >
+        <h4>
+            Camera was created successfully!
+        </h4>
+        <div class="action"> 
+            <button (click)="newCamera()" class="save" >Add new</button>
+        </div>
+    </div>
+</div>
