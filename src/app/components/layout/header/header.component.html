@@ -1,8 +1,10 @@
 <div>
     <header class="header">
         <h1 (click)="showHome()">Angular Camera Client</h1>
-        <app-add-camera-button></app-add-camera-button>
-        <app-graphic-button></app-graphic-button>
+        <div class="actions">
+            <app-add-camera-button></app-add-camera-button>
+            <app-graphic-button></app-graphic-button>
+        </div>
     </header>
     <div class="main-image">
         <img src="../../../../assets/security.jpg" alt = "A camera is watching you..." />
