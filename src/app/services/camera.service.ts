@@ -11,6 +11,10 @@ let baseUrl = "http://localhost:8080";
 export class CameraService {
   constructor(private http: HttpClient) { }
 
+  getById(id: any): Observable<Camera> {
+    return this.http.get(`${baseUrl}/camera/${id}`)
+  }
+
   getAll(): Observable<Camera[]> {
     return this.http.get<Camera[]>(`${baseUrl}/camera`);
   }
@@ -19,7 +23,11 @@ export class CameraService {
     return this.http.delete(`${baseUrl}/camera/${id}`);
   }
 
-  create(camera: Camera): Observable<any> {
+  create(camera: Camera): Observable<Camera> {
     return this.http.post(`${baseUrl}/camera`, camera);
+  }
+
+  update(id: any, camera: Camera): Observable<Camera> {
+    return this.http.post(`${baseUrl}/camera/${id}`, camera);
   }
 }
