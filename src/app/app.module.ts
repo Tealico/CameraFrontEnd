@@ -16,6 +16,7 @@ import { GraphicComponent } from './components/camera/graphic/graphic.component'
 import { GraphicButtonComponent } from './components/UI/graphic-button/graphic-button.component';
 import { CameraFormComponent } from './components/camera/camera-form/camera-form.component';
 import { FormsModule } from '@angular/forms';
+import { UpdateCameraComponent } from './components/camera/update-camera/update-camera.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     AddCameraButtonComponent,
     GraphicButtonComponent,
     GraphicComponent,
-    CameraFormComponent
+    CameraFormComponent,
+    UpdateCameraComponent
   ],
   imports: [
     BrowserModule,

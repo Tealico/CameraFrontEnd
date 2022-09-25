@@ -38,4 +38,8 @@ export class CameraItemComponent implements OnInit {
         error: (e) => console.error(e)
       });
   }
+
+  update(): void{
+    this.router.navigate([`/cameras/edit/${this.id}`]);
+  }
 }

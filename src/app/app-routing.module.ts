@@ -4,12 +4,14 @@ import { AppComponent } from './app.component';
 import { AddCameraComponent } from './components/camera/add-camera/add-camera.component';
 import { GraphicComponent } from './components/camera/graphic/graphic.component';
 import { CamerasComponent } from './components/camera/cameras/cameras.component';
+import { UpdateCameraComponent } from './components/camera/update-camera/update-camera.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'cameras', pathMatch: 'full' },
   { path: 'cameras', component: CamerasComponent },
   { path: 'cameras/add', component: AddCameraComponent },
-  { path: 'cameras/graphic', component: GraphicComponent }
+  { path: 'cameras/graphic', component: GraphicComponent },
+  { path: 'cameras/edit/:id', component: UpdateCameraComponent },
   // { path: 'tutorials/:id', component: TutorialDetailsComponent },
 ];
 
