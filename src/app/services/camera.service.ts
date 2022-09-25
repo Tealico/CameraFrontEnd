@@ -14,4 +14,8 @@ export class CameraService {
   getAll(): Observable<Camera[]> {
     return this.http.get<Camera[]>(`${baseUrl}/camera`);
   }
+
+  delete(id: any): Observable<any> {
+    return this.http.delete(`${baseUrl}/camera/${id}`);
+  }
 }

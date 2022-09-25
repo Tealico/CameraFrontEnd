@@ -10,6 +10,10 @@ import { AvailableCamerasComponent } from './components/camera/available-cameras
 import { HttpClientModule } from '@angular/common/http';
 import { CameraItemComponent } from './components/camera/camera-item/camera-item.component';
 import { CardComponent } from './components/UI/card/card.component';
+import { AddCameraComponent } from './components/camera/add-camera/add-camera.component';
+import { AddCameraButtonComponent } from './components/UI/add-camera-button/add-camera-button.component';
+import { GraphicComponent } from './components/camera/graphic/graphic.component';
+import { GraphicButtonComponent } from './components/UI/graphic-button/graphic-button.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { CardComponent } from './components/UI/card/card.component';
     CamerasSummaryComponent,
     AvailableCamerasComponent,
     CameraItemComponent,
-    CardComponent
+    CardComponent,
+    AddCameraComponent,
+    AddCameraButtonComponent,
+    GraphicButtonComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule,

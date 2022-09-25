@@ -1,11 +1,13 @@
 <div class="cameras">
     <ul>
         <app-card>
-            <app-camera-item *ngFor="let camera of cameras" 
+            <app-camera-item *ngFor="let camera of cameras"
+            [id]="camera.id"
             [name]="camera.name"
             [model]="camera.model"
             [resolution]="camera.resolution"
             [ip]="camera.ip"
+            (onDelete)="deleteCameraHandler()"
             ></app-camera-item>
         </app-card>
     </ul>

@@ -1,0 +1,21 @@
+.button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #8a2b06;
+    color: white;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.button:hover,
+.button:active {
+    background-color: #441501;
+}
+
+.icon {
+    width: 1.35rem;
+    height: 1.35rem;
+}

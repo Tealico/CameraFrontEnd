@@ -21,11 +21,16 @@ export class AvailableCamerasComponent implements OnInit {
       .subscribe({
         next: (data) => {
           this.cameras = data;
-          console.log(data);
         },
         error: (e) => console.error(e)
       });
+  }
 
-      // console.log(JSON.stringify(this.cameras));
+  deleteCameraHandler(): void {
+    this.retrieveCameras();
+  }
+
+  updateCameraHandler(): void{
+    this.retrieveCameras();
   }
 }

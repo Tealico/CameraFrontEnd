@@ -20,3 +20,38 @@
     color: #ad5502;
     font-size: 1.25rem;
 }
+.edit {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #691f01;
+    color: white;
+    padding: 0.75rem 3.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.edit:hover,
+.edit:active {
+    background-color: #441501;
+}
+.delete {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: #8a2b06;
+    color: white;
+    padding: 0.75rem 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.delete:hover,
+.delete:active {
+    background-color: #441501;
+}
