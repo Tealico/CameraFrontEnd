@@ -17,6 +17,7 @@ import { GraphicButtonComponent } from './components/UI/graphic-button/graphic-b
 import { CameraFormComponent } from './components/camera/camera-form/camera-form.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateCameraComponent } from './components/camera/update-camera/update-camera.component';
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
@@ -38,9 +39,11 @@ import { UpdateCameraComponent } from './components/camera/update-camera/update-
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgApexchartsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
