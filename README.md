@@ -11,4 +11,4 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The 
 Run `ng generate component component-name` to generate a new component.
 
 ## Demo 
-![](https://github.com/Tealico/CameraFrontEnd/CameraClient.gif)
+![](https://github.com/Tealico/CameraFrontEnd/blob/master/CameraClient.gif)
